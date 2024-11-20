@@ -1,0 +1,54 @@
+:root {
+  --open-color: #b2df8a;
+  --close-color: #e41a1c;
+  --tooltip-bg: rgba(0, 0, 0, 0.8);
+  --tooltip-text: white;
+}
+
+.child1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.companies,
+.month {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  border: 1px solid #ccc;
+  padding: 10px;
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+.legend rect {
+  fill: var(--open-color);
+}
+
+.legend text {
+  fill: var(--tooltip-text);
+}
+
+.dot-open {
+  fill: var(--open-color);
+}
+
+.dot-close {
+  fill: var(--close-color);
+}
